@@ -44,249 +44,353 @@ widget state =
   -- , root "true"
   -- , style state.style_Content
   ]
-  [ scrollView
-      [ id_ "ScrollView"
-      , height "match_parent"
-      , width "match_parent"
-      , margin "20,7,20,0"
-      , background "#FFFFFF"
-      , cornerRadius "0"
-      -- , style state.style_ScrollView
-      ]
-      [ linearLayout
-          [ id_ "id1"
-          , height "match_parent"
-          , width "match_parent"
-          , background "#FFFFFF"
-          , orientation "horizontal"
-          ]
-          [ linearLayout
-              [ id_ "ll1"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img1"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyTop"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll2"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img2"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyMid"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll3"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img3"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyMid"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll4"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img4"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyBottom"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll5"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img5"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyTop"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll6"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img6"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyMid"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll7"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img7"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyBottom"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll8"
-              , height "wrap_content"
-              , width "40"
-              , background state.back
-              ]
-              [ imageView
-                  [ id_ "img8"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyTop"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll9"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img9"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyMid"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll10"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img10"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyMid"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll11"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img11"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyBottom"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll12"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img12"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyTop"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll13"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img13"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyMid"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll14"
-              , height "wrap_content"
-              , width "40"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img14"
-                  , height "180"
-                  , width "40"
-                  , margin "0,0,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyBottom"
-                  , background state.clickme
-                  ]
-              ]
-          ]
-      ]
-  ]
+  [ linearLayout
+    [ id_ "id1"
+    , margin "0,50,0,0"
+    , gravity "center"
+    , height "250"
+    , width "1000"
+    , background "black"
+    , orientation "horizontal"
+    ]
+    [ linearLayout
+        [ id_ "ll1"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img1"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyTop"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll2"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img2"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyMid"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll3"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img3"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyMid"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll4"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img4"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyBottom"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll5"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img5"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyTop"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll6"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img6"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyMid"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll7"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img7"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyBottom"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll8"
+        , height "wrap_content"
+        , width "40"
+        , background state.back
+        ]
+        [ imageView
+            [ id_ "img8"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyTop"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll9"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img9"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyMid"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll10"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img10"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyMid"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll11"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img11"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyBottom"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll12"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img12"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyTop"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll13"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img13"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyMid"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll14"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img14"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyBottom"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll15"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img15"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyTop"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll16"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img16"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyMid"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll17"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img17"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyMid"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll18"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img18"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyBottom"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll19"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img19"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyTop"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll20"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img20"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyMid"
+            , background state.clickme
+            ]
+        ]
+    , linearLayout
+        [ id_ "ll21"
+        , height "wrap_content"
+        , width "40"
+        , background "#FFFFFF"
+        ]
+        [ imageView
+            [ id_ "img21"
+            , height "180"
+            , width "40"
+            , margin "0,0,0,0"
+            , onClick (Some click)
+            , imageUrl "keyBottom"
+            , background state.clickme
+            ]
+        ]
+    ]
+]
 
 main = do
   log "inside main"
@@ -296,7 +400,7 @@ main = do
   log "inside main after "
 
   --- Update State ----
-  state <- U.updateState "background" "yellow"
+  state <- U.updateState "background" "#D3D3D3"
 
   ---- Render Widget ---
   U.render (widget state) listen
@@ -371,6 +475,13 @@ listen = do
   sig12 <- U.signal "img12" ""
   sig13 <- U.signal "img13" ""
   sig14 <- U.signal "img14" ""
+  sig15 <- U.signal "img15" ""
+  sig16 <- U.signal "img16" ""
+  sig17 <- U.signal "img17" ""
+  sig18 <- U.signal "img18" ""
+  sig19 <- U.signal "img19" ""
+  sig20 <- U.signal "img20" ""
+  sig21 <- U.signal "img21" ""
 
 
 
@@ -388,6 +499,13 @@ listen = do
   let behavior12 = eval5 <$> sig12.behavior
   let behavior13 = eval6 <$> sig13.behavior
   let behavior14 = eval7 <$> sig14.behavior
+  let behavior15 = eval1 <$> sig15.behavior
+  let behavior16 = eval2 <$> sig16.behavior
+  let behavior17 = eval3 <$> sig17.behavior
+  let behavior18 = eval4 <$> sig18.behavior
+  let behavior19 = eval5 <$> sig19.behavior
+  let behavior20 = eval6 <$> sig20.behavior
+  let behavior21 = eval7 <$> sig21.behavior
 
   let events1 = (sig1.event)
   let events2 = (sig2.event)
@@ -403,6 +521,13 @@ listen = do
   let events12 = (sig12.event)
   let events13 = (sig13.event)
   let events14 = (sig14.event)
+  let events15 = (sig15.event)
+  let events16 = (sig16.event)
+  let events17 = (sig17.event)
+  let events18 = (sig18.event)
+  let events19 = (sig19.event)
+  let events20 = (sig20.event)
+  let events21 = (sig21.event)
 
   _ <- U.patch widget behavior1 events1
   _ <- U.patch widget behavior2 events2
@@ -417,4 +542,11 @@ listen = do
   _ <- U.patch widget behavior11 events11
   _ <- U.patch widget behavior12 events12
   _ <- U.patch widget behavior13 events13
-  U.patch widget behavior14 events14
+  _ <- U.patch widget behavior10 events14
+  _ <- U.patch widget behavior11 events15
+  _ <- U.patch widget behavior12 events16
+  _ <- U.patch widget behavior13 events17
+  _ <- U.patch widget behavior10 events18
+  _ <- U.patch widget behavior11 events19
+  _ <- U.patch widget behavior12 events20
+  U.patch widget behavior13 events21
