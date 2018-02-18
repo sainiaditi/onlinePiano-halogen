@@ -108,7 +108,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyMid"
+              , imageUrl "keyBottom"
               , background state.clickme
               ]
           ]
@@ -124,7 +124,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyBottom"
+              , imageUrl "keyTop"
               , background state.clickme
               ]
           ]
@@ -140,7 +140,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyTop"
+              , imageUrl "keyMid"
               , background state.clickme
               ]
           ]
@@ -220,7 +220,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyMid"
+              , imageUrl "keyBottom"
               , background state.clickme
               ]
           ]
@@ -236,7 +236,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyBottom"
+              , imageUrl "keyTop"
               , background state.clickme
               ]
           ]
@@ -252,7 +252,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyTop"
+              , imageUrl "keyMid"
               , background state.clickme
               ]
           ]
@@ -332,7 +332,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyMid"
+              , imageUrl "keyBottom"
               , background state.clickme
               ]
           ]
@@ -348,7 +348,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyBottom"
+              , imageUrl "keyTop"
               , background state.clickme
               ]
           ]
@@ -364,7 +364,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyTop"
+              , imageUrl "keyMid"
               , background state.clickme
               ]
           ]
@@ -424,49 +424,149 @@ eval1 _ = do
       _ <- log "back"
       launchAff_ $  do
 
-       sequence $ playNotes [A] 0.3
+       sequence $ playNotes [C3] 0.3
       U.updateState "clickme" "#000000"
 
 eval2 _ = do
       log "inside eval2"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [B] 0.3
+       sequence $ playNotes [D3] 0.3
       U.updateState "clickme" "#000000"
 
 eval3 _ = do
       log "inside eval3"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [C] 0.3
+       sequence $ playNotes [E3] 0.3
       U.updateState "clickme" "#000000"
 
 eval4 _ = do
       log "inside eval4"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [D] 0.3
+       sequence $ playNotes [F3] 0.3
       U.updateState "clickme" "#000000"
 
 eval5 _ = do
       log "inside eval5"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [E] 0.3
+       sequence $ playNotes [G3] 0.3
       U.updateState "clickme" "#000000"
 
 eval6 _ = do
       log "inside eval6"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [F] 0.3
+       sequence $ playNotes [A3] 0.3
       U.updateState "clickme" "#000000"
 
 eval7 _ = do
       log "inside eval7"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [G] 0.3
+       sequence $ playNotes [B3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval8 _ = do
+      log "inside eval1"
+      _ <- log "back"
+      launchAff_ $  do
+
+       sequence $ playNotes [C3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval9 _ = do
+      log "inside eval2"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [D3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval10 _ = do
+      log "inside eval3"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [E3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval11 _ = do
+      log "inside eval4"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [F3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval12 _ = do
+      log "inside eval5"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [G3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval13 _ = do
+      log "inside eval6"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [A3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval14 _ = do
+      log "inside eval7"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [B3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval15 _ = do
+      log "inside eval1"
+      _ <- log "back"
+      launchAff_ $  do
+
+       sequence $ playNotes [C3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval16 _ = do
+      log "inside eval2"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [D3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval17 _ = do
+      log "inside eval3"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [E3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval18 _ = do
+      log "inside eval4"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [F3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval19 _ = do
+      log "inside eval5"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [G3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval20 _ = do
+      log "inside eval6"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [A3] 0.3
+      U.updateState "clickme" "#000000"
+
+eval21 _ = do
+      log "inside eval7"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [B3] 0.3
       U.updateState "clickme" "#000000"
 
 listen = do
@@ -502,20 +602,20 @@ listen = do
   let behavior5 = eval5 <$> sig5.behavior
   let behavior6 = eval6 <$> sig6.behavior
   let behavior7 = eval7 <$> sig7.behavior
-  let behavior8 = eval1 <$> sig8.behavior
-  let behavior9 = eval2 <$> sig9.behavior
-  let behavior10 = eval3 <$> sig10.behavior
-  let behavior11 = eval4 <$> sig11.behavior
-  let behavior12 = eval5 <$> sig12.behavior
-  let behavior13 = eval6 <$> sig13.behavior
-  let behavior14 = eval7 <$> sig14.behavior
-  let behavior15 = eval1 <$> sig15.behavior
-  let behavior16 = eval2 <$> sig16.behavior
-  let behavior17 = eval3 <$> sig17.behavior
-  let behavior18 = eval4 <$> sig18.behavior
-  let behavior19 = eval5 <$> sig19.behavior
-  let behavior20 = eval6 <$> sig20.behavior
-  let behavior21 = eval7 <$> sig21.behavior
+  let behavior8 = eval8 <$> sig8.behavior
+  let behavior9 = eval9 <$> sig9.behavior
+  let behavior10 = eval10 <$> sig10.behavior
+  let behavior11 = eval11 <$> sig11.behavior
+  let behavior12 = eval12 <$> sig12.behavior
+  let behavior13 = eval13 <$> sig13.behavior
+  let behavior14 = eval14 <$> sig14.behavior
+  let behavior15 = eval15 <$> sig15.behavior
+  let behavior16 = eval16 <$> sig16.behavior
+  let behavior17 = eval17 <$> sig17.behavior
+  let behavior18 = eval18 <$> sig18.behavior
+  let behavior19 = eval19 <$> sig19.behavior
+  let behavior20 = eval20 <$> sig20.behavior
+  let behavior21 = eval21 <$> sig21.behavior
 
   let events1 = (sig1.event)
   let events2 = (sig2.event)
