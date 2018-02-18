@@ -402,7 +402,6 @@ widget state =
           ]
       ]
   ]
-
 main = do
   log "inside main"
 
