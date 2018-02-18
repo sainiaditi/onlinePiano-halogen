@@ -58,35 +58,35 @@ widget state =
           , height "match_parent"
           , width "match_parent"
           , background "#FFFFFF"
-          , orientation "vertical"
+          , orientation "horizontal"
           ]
           [ linearLayout
               [ id_ "ll1"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img1"
-                  , height "40"
-                  , width "180"
-                  , margin "0,10,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
-                  , imageUrl "keyBottom"
+                  , imageUrl "keyTop"
                   , background state.clickme
                   ]
               ]
           , linearLayout
               [ id_ "ll2"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img2"
-                  , height "40"
-                  , width "180"
-                  , margin "0,50,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
                   , imageUrl "keyMid"
                   , background state.clickme
@@ -95,14 +95,14 @@ widget state =
           , linearLayout
               [ id_ "ll3"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img3"
-                  , height "40"
-                  , width "180"
-                  , margin "0,90,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
                   , imageUrl "keyMid"
                   , background state.clickme
@@ -111,46 +111,46 @@ widget state =
           , linearLayout
               [ id_ "ll4"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img4"
-                  , height "40"
-                  , width "180"
-                  , margin "0,130,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyTop"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll5"
-              , height "wrap_content"
-              , width "match_parent"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img5"
-                  , height "40"
-                  , width "180"
-                  , margin "0,170,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
                   , imageUrl "keyBottom"
                   , background state.clickme
                   ]
               ]
           , linearLayout
+              [ id_ "ll5"
+              , height "wrap_content"
+              , width "40"
+              , background "#FFFFFF"
+              ]
+              [ imageView
+                  [ id_ "img5"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
+                  , onClick (Some click)
+                  , imageUrl "keyTop"
+                  , background state.clickme
+                  ]
+              ]
+          , linearLayout
               [ id_ "ll6"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img6"
-                  , height "40"
-                  , width "180"
-                  , margin "0,210,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
                   , imageUrl "keyMid"
                   , background state.clickme
@@ -159,46 +159,46 @@ widget state =
           , linearLayout
               [ id_ "ll7"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img7"
-                  , height "40"
-                  , width "180"
-                  , margin "0,250,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyTop"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll8"
-              , height "wrap_content"
-              , width "match_parent"
-              , background state.back
-              ]
-              [ imageView
-                  [ id_ "img8"
-                  , height "40"
-                  , width "180"
-                  , margin "0,290,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
                   , imageUrl "keyBottom"
                   , background state.clickme
                   ]
               ]
           , linearLayout
+              [ id_ "ll8"
+              , height "wrap_content"
+              , width "40"
+              , background state.back
+              ]
+              [ imageView
+                  [ id_ "img8"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
+                  , onClick (Some click)
+                  , imageUrl "keyTop"
+                  , background state.clickme
+                  ]
+              ]
+          , linearLayout
               [ id_ "ll9"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img9"
-                  , height "40"
-                  , width "180"
-                  , margin "0,330,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
                   , imageUrl "keyMid"
                   , background state.clickme
@@ -207,14 +207,14 @@ widget state =
           , linearLayout
               [ id_ "ll10"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img10"
-                  , height "40"
-                  , width "180"
-                  , margin "0,370,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
                   , imageUrl "keyMid"
                   , background state.clickme
@@ -223,46 +223,46 @@ widget state =
           , linearLayout
               [ id_ "ll11"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img11"
-                  , height "40"
-                  , width "180"
-                  , margin "0,410,0,0"
-                  , onClick (Some click)
-                  , imageUrl "keyTop"
-                  , background state.clickme
-                  ]
-              ]
-          , linearLayout
-              [ id_ "ll12"
-              , height "wrap_content"
-              , width "match_parent"
-              , background "#FFFFFF"
-              ]
-              [ imageView
-                  [ id_ "img12"
-                  , height "40"
-                  , width "180"
-                  , margin "0,450,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
                   , imageUrl "keyBottom"
                   , background state.clickme
                   ]
               ]
           , linearLayout
+              [ id_ "ll12"
+              , height "wrap_content"
+              , width "40"
+              , background "#FFFFFF"
+              ]
+              [ imageView
+                  [ id_ "img12"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
+                  , onClick (Some click)
+                  , imageUrl "keyTop"
+                  , background state.clickme
+                  ]
+              ]
+          , linearLayout
               [ id_ "ll13"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img13"
-                  , height state.ht
-                  , width "180"
-                  , margin "0,490,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
                   , imageUrl "keyMid"
                   , background state.clickme
@@ -271,16 +271,16 @@ widget state =
           , linearLayout
               [ id_ "ll14"
               , height "wrap_content"
-              , width "match_parent"
+              , width "40"
               , background "#FFFFFF"
               ]
               [ imageView
                   [ id_ "img14"
-                  , height "40"
-                  , width "180"
-                  , margin "0,530,0,0"
+                  , height "180"
+                  , width "40"
+                  , margin "0,0,0,0"
                   , onClick (Some click)
-                  , imageUrl "keyTop"
+                  , imageUrl "keyBottom"
                   , background state.clickme
                   ]
               ]
