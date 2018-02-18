@@ -1,13 +1,20 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --content-base dist/ --host 0.0.0.0"
+    "compile": "webpack --progress --colors --optimize-minimize",
+    "compile-psc": "pulp build",
+    "start": "(npm run start-psc &) && webpack-dev-server --content-base dist/ --host 0.0.0.0",
+    "webpack": "webpack-dev-server --content-base dist/ --host 0.0.0.0",
+    "start-psc": "pulp --watch build"
   },
   "dependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "presto-ui": "^0.3.3",
-    "webpack": "^3.5.5",
+    "webpack": "^3.11.0",
     "webpack-dev-server": "2.9.7"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
   }
 }
