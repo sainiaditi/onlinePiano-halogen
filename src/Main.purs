@@ -108,7 +108,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyMid"
+              , imageUrl "keyBottom"
               , background state.clickme
               ]
           ]
@@ -124,7 +124,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyBottom"
+              , imageUrl "keyTop"
               , background state.clickme
               ]
           ]
@@ -140,7 +140,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyTop"
+              , imageUrl "keyMid"
               , background state.clickme
               ]
           ]
@@ -220,7 +220,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyMid"
+              , imageUrl "keyBottom"
               , background state.clickme
               ]
           ]
@@ -236,7 +236,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyBottom"
+              , imageUrl "keyTop"
               , background state.clickme
               ]
           ]
@@ -252,7 +252,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyTop"
+              , imageUrl "keyMid"
               , background state.clickme
               ]
           ]
@@ -332,7 +332,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyMid"
+              , imageUrl "keyBottom"
               , background state.clickme
               ]
           ]
@@ -348,7 +348,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyBottom"
+              , imageUrl "keyTop"
               , background state.clickme
               ]
           ]
@@ -364,7 +364,7 @@ widget state =
               , width "40"
               , margin "0,0,0,0"
               , onClick (Some click)
-              , imageUrl "keyTop"
+              , imageUrl "keyMid"
               , background state.clickme
               ]
           ]
@@ -424,49 +424,49 @@ eval1 _ = do
       _ <- log "back"
       launchAff_ $  do
 
-       sequence $ playNotes [A] 0.3
+       sequence $ playNotes [C3] 0.3
       U.updateState "clickme" "#000000"
 
 eval2 _ = do
       log "inside eval2"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [B] 0.3
+       sequence $ playNotes [D3] 0.3
       U.updateState "clickme" "#000000"
 
 eval3 _ = do
       log "inside eval3"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [C] 0.3
+       sequence $ playNotes [E3] 0.3
       U.updateState "clickme" "#000000"
 
 eval4 _ = do
       log "inside eval4"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [D] 0.3
+       sequence $ playNotes [F3] 0.3
       U.updateState "clickme" "#000000"
 
 eval5 _ = do
       log "inside eval5"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [E] 0.3
+       sequence $ playNotes [G3] 0.3
       U.updateState "clickme" "#000000"
 
 eval6 _ = do
       log "inside eval6"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [F] 0.3
+       sequence $ playNotes [A3] 0.3
       U.updateState "clickme" "#000000"
 
 eval7 _ = do
       log "inside eval7"
       _ <- log "back"
       launchAff_ $  do
-       sequence $ playNotes [G] 0.3
+       sequence $ playNotes [B3] 0.3
       U.updateState "clickme" "#000000"
 
 listen = do
