@@ -31,14 +31,6 @@ import UI.Util as U
 foreign import click :: MEvent
 foreign import change :: MEvent
 
--- main :: forall e. Eff (console :: CONSOLE | e) Unit
--- main = do
---    launchAff_ $  do
---     -- _ <- sequence $ play (createSound [G, F, G, F, G, G, C, G, F, G, F, G, G] [X, P, X, P, X, R] 3.33)
---
---     sequence $ playNotes [G, F, G, F, G, D, G, C, C, B, C, C, D, C, G, F] 0.3
-
-
 widget state =
   linearLayout
   [ id_ "mainid"
@@ -321,6 +313,48 @@ eval1 _ = do
        sequence $ playNotes [A] 0.3
       U.updateState "clickme" "#000000"
 
+eval2 _ = do
+      log "inside eval2"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [B] 0.3
+      U.updateState "clickme" "#000000"
+
+eval3 _ = do
+      log "inside eval3"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [C] 0.3
+      U.updateState "clickme" "#000000"
+
+eval4 _ = do
+      log "inside eval4"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [D] 0.3
+      U.updateState "clickme" "#000000"
+
+eval5 _ = do
+      log "inside eval5"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [E] 0.3
+      U.updateState "clickme" "#000000"
+
+eval6 _ = do
+      log "inside eval6"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [F] 0.3
+      U.updateState "clickme" "#000000"
+
+eval7 _ = do
+      log "inside eval7"
+      _ <- log "back"
+      launchAff_ $  do
+       sequence $ playNotes [G] 0.3
+      U.updateState "clickme" "#000000"
+
 listen = do
   log "inside listen"
   sig1 <- U.signal "img1" ""
@@ -341,7 +375,46 @@ listen = do
 
 
   let behavior1 = eval1 <$> sig1.behavior
+  let behavior2 = eval2 <$> sig2.behavior
+  let behavior3 = eval3 <$> sig3.behavior
+  let behavior4 = eval4 <$> sig4.behavior
+  let behavior5 = eval5 <$> sig5.behavior
+  let behavior6 = eval6 <$> sig6.behavior
+  let behavior7 = eval7 <$> sig7.behavior
+  let behavior8 = eval1 <$> sig8.behavior
+  let behavior9 = eval2 <$> sig9.behavior
+  let behavior10 = eval3 <$> sig10.behavior
+  let behavior11 = eval4 <$> sig11.behavior
+  let behavior12 = eval5 <$> sig12.behavior
+  let behavior13 = eval6 <$> sig13.behavior
+  let behavior14 = eval7 <$> sig14.behavior
 
   let events1 = (sig1.event)
+  let events2 = (sig2.event)
+  let events3 = (sig3.event)
+  let events4 = (sig4.event)
+  let events5 = (sig5.event)
+  let events6 = (sig6.event)
+  let events7 = (sig7.event)
+  let events8 = (sig8.event)
+  let events9 = (sig9.event)
+  let events10 = (sig10.event)
+  let events11 = (sig11.event)
+  let events12 = (sig12.event)
+  let events13 = (sig13.event)
+  let events14 = (sig14.event)
 
-  U.patch widget behavior1 events1
+  _ <- U.patch widget behavior1 events1
+  _ <- U.patch widget behavior2 events2
+  _ <- U.patch widget behavior3 events3
+  _ <- U.patch widget behavior4 events4
+  _ <- U.patch widget behavior5 events5
+  _ <- U.patch widget behavior6 events6
+  _ <- U.patch widget behavior7 events7
+  _ <- U.patch widget behavior8 events8
+  _ <- U.patch widget behavior9 events9
+  _ <- U.patch widget behavior10 events10
+  _ <- U.patch widget behavior11 events11
+  _ <- U.patch widget behavior12 events12
+  _ <- U.patch widget behavior13 events13
+  U.patch widget behavior14 events14
