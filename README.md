@@ -1,10 +1,11 @@
 
 # onlinePiano-halogen
+```
+npm i
 
-`npm i`
+bower i
 
-`bower i`
+pulp build
 
-`pulp --watch build`
-
-`npm start`
+npm start
+```
