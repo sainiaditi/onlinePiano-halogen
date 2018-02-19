@@ -31,8 +31,7 @@ import UI.Util as U
 foreign import click :: MEvent
 foreign import change :: MEvent
 
-widget state =
-  linearLayout
+widget state = linearLayout
     [ id_ "mainid"
     , height "match_parent"
     , width "match_parent"
@@ -41,19 +40,17 @@ widget state =
     , padding "0,0,0,30"
     , background state.background
     , cornerRadius "0"
-    -- , root "true"
-    -- , style state.style_Content
     ]
     [ textView
         [ id_ "text"
-        , textSize "36" 
-        , margin "0,4,0,0" 
+        , textSize "36"
+        , margin "0,4,0,0"
         , width "200"
-        , height "100" 
+        , height "100"
         , color "black"
         , text "Piano"
         , fontStyle "Arial"
-        , gravity "center" 
+        , gravity "center"
         ]
     , linearLayout
       [ id_ "id1"
@@ -402,175 +399,125 @@ widget state =
           ]
       ]
   ]
-main = do
-  log "inside main"
 
+main = do
   --- Init State {} empty record--
   U.initializeState
-  log "inside main after "
 
   --- Update State ----
   state <- U.updateState "background" "#D3D3D3"
 
   ---- Render Widget ---
   U.render (widget state) listen
-  log("heloo@@@")
 
   pure unit
 
-
 eval1 _ = do
-      log "inside eval1"
-      _ <- log "back"
       launchAff_ $  do
-
        sequence $ playNotes [C3] 0.3
       U.updateState "clickme" "#000000"
 
 eval2 _ = do
-      log "inside eval2"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [D3] 0.3
       U.updateState "clickme" "#000000"
 
 eval3 _ = do
-      log "inside eval3"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [E3] 0.3
       U.updateState "clickme" "#000000"
 
 eval4 _ = do
-      log "inside eval4"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [F3] 0.3
       U.updateState "clickme" "#000000"
 
 eval5 _ = do
-      log "inside eval5"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [G3] 0.3
       U.updateState "clickme" "#000000"
 
 eval6 _ = do
-      log "inside eval6"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [A3] 0.3
       U.updateState "clickme" "#000000"
 
 eval7 _ = do
-      log "inside eval7"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [B3] 0.3
       U.updateState "clickme" "#000000"
 
 eval8 _ = do
-      log "inside eval1"
-      _ <- log "back"
       launchAff_ $  do
-
        sequence $ playNotes [C3] 0.3
       U.updateState "clickme" "#000000"
 
 eval9 _ = do
-      log "inside eval2"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [D3] 0.3
       U.updateState "clickme" "#000000"
 
 eval10 _ = do
-      log "inside eval3"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [E3] 0.3
       U.updateState "clickme" "#000000"
 
 eval11 _ = do
-      log "inside eval4"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [F3] 0.3
       U.updateState "clickme" "#000000"
 
 eval12 _ = do
-      log "inside eval5"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [G3] 0.3
       U.updateState "clickme" "#000000"
 
 eval13 _ = do
-      log "inside eval6"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [A3] 0.3
       U.updateState "clickme" "#000000"
 
 eval14 _ = do
-      log "inside eval7"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [B3] 0.3
       U.updateState "clickme" "#000000"
 
 eval15 _ = do
-      log "inside eval1"
-      _ <- log "back"
       launchAff_ $  do
-
        sequence $ playNotes [C3] 0.3
       U.updateState "clickme" "#000000"
 
 eval16 _ = do
-      log "inside eval2"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [D3] 0.3
       U.updateState "clickme" "#000000"
 
 eval17 _ = do
-      log "inside eval3"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [E3] 0.3
       U.updateState "clickme" "#000000"
 
 eval18 _ = do
-      log "inside eval4"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [F3] 0.3
       U.updateState "clickme" "#000000"
 
 eval19 _ = do
-      log "inside eval5"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [G3] 0.3
       U.updateState "clickme" "#000000"
 
 eval20 _ = do
-      log "inside eval6"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [A3] 0.3
       U.updateState "clickme" "#000000"
 
 eval21 _ = do
-      log "inside eval7"
-      _ <- log "back"
       launchAff_ $  do
        sequence $ playNotes [B3] 0.3
       U.updateState "clickme" "#000000"
 
 listen = do
-  log "inside listen"
   sig1 <- U.signal "img1" ""
   sig2 <- U.signal "img2" ""
   sig3 <- U.signal "img3" ""
@@ -592,8 +539,6 @@ listen = do
   sig19 <- U.signal "img19" ""
   sig20 <- U.signal "img20" ""
   sig21 <- U.signal "img21" ""
-
-
 
   let behavior1 = eval1 <$> sig1.behavior
   let behavior2 = eval2 <$> sig2.behavior
