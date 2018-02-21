@@ -12,5 +12,6 @@ pulp build
 npm start
 ```
 Open http://localhost:8080 in your browser
-## Screenshot
+## Preview
+![Alt Text](Pianogif.gif)
 ![Screenshot](ScreenShot.png)
