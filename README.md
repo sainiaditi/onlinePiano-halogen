@@ -4,6 +4,8 @@
 
 ## Getting Started
 ```
+git clone https://github.com/sainiaditi/onlinePiano-halogen.git
+cd onlinePiano-halogen
 npm i
 bower i
 pulp build
