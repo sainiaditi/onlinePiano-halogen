@@ -1,7 +1,8 @@
 
 # onlinePiano-halogen
+### [Play Piano](https://sainiaditi.github.io/onlinePiano-halogen/dist/index.html)
 
-### Getting Started
+## Getting Started
 ```
 npm i
 bower i
