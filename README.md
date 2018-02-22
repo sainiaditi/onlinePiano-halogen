@@ -3,12 +3,15 @@
 ### [Play Piano](https://sainiaditi.github.io/onlinePiano-halogen/dist/index.html)
 
 ## Getting Started
+### Cloning the repository
 ```
 $ git clone https://github.com/sainiaditi/onlinePiano-halogen.git
 $ cd onlinePiano-halogen
 $ npm i
 $ bower i
-$ pulp build
+```
+### Getting Started
+```
 $ npm start
 ```
 Open http://localhost:8080 in your browser
